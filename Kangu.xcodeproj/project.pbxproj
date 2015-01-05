@@ -14,6 +14,8 @@
 		B06659601A5AFE7300F00BF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B066595F1A5AFE7300F00BF8 /* Images.xcassets */; };
 		B06659631A5AFE7300F00BF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06659611A5AFE7300F00BF8 /* LaunchScreen.xib */; };
 		B066596F1A5AFE7300F00BF8 /* KanguTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B066596E1A5AFE7300F00BF8 /* KanguTests.m */; };
+		B06659791A5AFF2600F00BF8 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06659781A5AFF2600F00BF8 /* ExternalAccessory.framework */; };
+		B066597C1A5AFF4800F00BF8 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B066597B1A5AFF4800F00BF8 /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		B06659681A5AFE7300F00BF8 /* KanguTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanguTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B066596D1A5AFE7300F00BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B066596E1A5AFE7300F00BF8 /* KanguTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanguTests.m; sourceTree = "<group>"; };
+		B06659781A5AFF2600F00BF8 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		B066597A1A5AFF2600F00BF8 /* Kangu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Kangu.entitlements; sourceTree = "<group>"; };
+		B066597B1A5AFF4800F00BF8 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B066597C1A5AFF4800F00BF8 /* PassKit.framework in Frameworks */,
+				B06659791A5AFF2600F00BF8 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,8 @@
 		B06659461A5AFE7300F00BF8 = {
 			isa = PBXGroup;
 			children = (
+				B066597B1A5AFF4800F00BF8 /* PassKit.framework */,
+				B06659781A5AFF2600F00BF8 /* ExternalAccessory.framework */,
 				B06659511A5AFE7300F00BF8 /* Kangu */,
 				B066596B1A5AFE7300F00BF8 /* KanguTests */,
 				B06659501A5AFE7300F00BF8 /* Products */,
@@ -81,6 +90,7 @@
 		B06659511A5AFE7300F00BF8 /* Kangu */ = {
 			isa = PBXGroup;
 			children = (
+				B066597A1A5AFF2600F00BF8 /* Kangu.entitlements */,
 				B06659561A5AFE7300F00BF8 /* AppDelegate.h */,
 				B06659571A5AFE7300F00BF8 /* AppDelegate.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
@@ -168,6 +178,15 @@
 				TargetAttributes = {
 					B066594E1A5AFE7300F00BF8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = C79M39U36T;
+						SystemCapabilities = {
+							com.apple.Passbook = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					B06659671A5AFE7300F00BF8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -343,9 +362,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kangu/Kangu.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Kangu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -353,9 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kangu/Kangu.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Kangu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
