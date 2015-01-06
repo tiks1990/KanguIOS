@@ -37,6 +37,12 @@
 		B07272401A5BA2B00094E809 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B072723F1A5BA2B00094E809 /* settings.png */; };
 		B07272421A5BA34D0094E809 /* likes.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272411A5BA34D0094E809 /* likes.png */; };
 		B07272441A5BA7F40094E809 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272431A5BA7F40094E809 /* bluetooth.png */; };
+		B07272461A5BAB010094E809 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272451A5BAB010094E809 /* menu.png */; };
+		B07272491A5BAB850094E809 /* TiendasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272481A5BAB850094E809 /* TiendasViewController.m */; };
+		B072724D1A5BB1C70094E809 /* TiendaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B072724B1A5BB1C70094E809 /* TiendaCell.m */; };
+		B072724E1A5BB1C70094E809 /* TiendaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B072724C1A5BB1C70094E809 /* TiendaCell.xib */; };
+		B07272501A5BB2BF0094E809 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B072724F1A5BB2BF0094E809 /* image.png */; };
+		B07272521A5BB4830094E809 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272511A5BB4830094E809 /* logo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +104,14 @@
 		B072723F1A5BA2B00094E809 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../images/settings.png; sourceTree = "<group>"; };
 		B07272411A5BA34D0094E809 /* likes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = likes.png; path = ../../images/likes.png; sourceTree = "<group>"; };
 		B07272431A5BA7F40094E809 /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluetooth.png; path = ../../images/bluetooth.png; sourceTree = "<group>"; };
+		B07272451A5BAB010094E809 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../images/menu.png; sourceTree = "<group>"; };
+		B07272471A5BAB850094E809 /* TiendasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiendasViewController.h; sourceTree = "<group>"; };
+		B07272481A5BAB850094E809 /* TiendasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiendasViewController.m; sourceTree = "<group>"; };
+		B072724A1A5BB1C70094E809 /* TiendaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiendaCell.h; sourceTree = "<group>"; };
+		B072724B1A5BB1C70094E809 /* TiendaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiendaCell.m; sourceTree = "<group>"; };
+		B072724C1A5BB1C70094E809 /* TiendaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiendaCell.xib; sourceTree = "<group>"; };
+		B072724F1A5BB2BF0094E809 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = ../../images/image.png; sourceTree = "<group>"; };
+		B07272511A5BB4830094E809 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = ../../images/logo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +167,13 @@
 				B07272301A5B8F1E0094E809 /* CustomTabBarController.m */,
 				B07272381A5BA09C0094E809 /* MenuViewController.h */,
 				B07272391A5BA09C0094E809 /* MenuViewController.m */,
+				B07272471A5BAB850094E809 /* TiendasViewController.h */,
+				B07272481A5BAB850094E809 /* TiendasViewController.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
 				B066595A1A5AFE7300F00BF8 /* ViewController.m */,
+				B072724A1A5BB1C70094E809 /* TiendaCell.h */,
+				B072724B1A5BB1C70094E809 /* TiendaCell.m */,
+				B072724C1A5BB1C70094E809 /* TiendaCell.xib */,
 				B072722A1A5B8D260094E809 /* AppFlow.storyboard */,
 				B066595F1A5AFE7300F00BF8 /* Images.xcassets */,
 				B06659611A5AFE7300F00BF8 /* LaunchScreen.xib */,
@@ -169,10 +188,13 @@
 				B07272181A5B37C50094E809 /* OpenSans-Regular.ttf */,
 				B07272191A5B37C50094E809 /* OpenSans-Semibold.ttf */,
 				B07272431A5BA7F40094E809 /* bluetooth.png */,
+				B072724F1A5BB2BF0094E809 /* image.png */,
 				B07272241A5B828E0094E809 /* Tour1.png */,
 				B07272251A5B828E0094E809 /* Tour2.png */,
 				B07272261A5B828E0094E809 /* Tour3.png */,
 				B07272361A5BA0430094E809 /* molly.png */,
+				B07272451A5BAB010094E809 /* menu.png */,
+				B07272511A5BB4830094E809 /* logo1.png */,
 				B07272411A5BA34D0094E809 /* likes.png */,
 				B072723F1A5BA2B00094E809 /* settings.png */,
 				B072723D1A5BA2280094E809 /* medalla.png */,
@@ -311,11 +333,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07272461A5BAB010094E809 /* menu.png in Resources */,
 				B07272281A5B828E0094E809 /* Tour2.png in Resources */,
 				B07272271A5B828E0094E809 /* Tour1.png in Resources */,
 				B07272421A5BA34D0094E809 /* likes.png in Resources */,
 				B07272441A5BA7F40094E809 /* bluetooth.png in Resources */,
 				B072721B1A5B7CE80094E809 /* KANGU LOGO.jpg in Resources */,
+				B07272521A5BB4830094E809 /* logo1.png in Resources */,
 				B066595E1A5AFE7300F00BF8 /* Main.storyboard in Resources */,
 				B072722B1A5B8D260094E809 /* AppFlow.storyboard in Resources */,
 				B072723E1A5BA2280094E809 /* medalla.png in Resources */,
@@ -324,8 +348,10 @@
 				B07272171A5B34ED0094E809 /* logo.png in Resources */,
 				B07272161A5B34ED0094E809 /* background.png in Resources */,
 				B07272291A5B828E0094E809 /* Tour3.png in Resources */,
+				B072724E1A5BB1C70094E809 /* TiendaCell.xib in Resources */,
 				B06659631A5AFE7300F00BF8 /* LaunchScreen.xib in Resources */,
 				B06659601A5AFE7300F00BF8 /* Images.xcassets in Resources */,
+				B07272501A5BB2BF0094E809 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +373,9 @@
 				B066595B1A5AFE7300F00BF8 /* ViewController.m in Sources */,
 				B06659581A5AFE7300F00BF8 /* AppDelegate.m in Sources */,
 				B07272101A5B1EFC0094E809 /* LogInViewController.m in Sources */,
+				B072724D1A5BB1C70094E809 /* TiendaCell.m in Sources */,
 				B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */,
+				B07272491A5BAB850094E809 /* TiendasViewController.m in Sources */,
 				B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */,
 				B07272231A5B80470094E809 /* PageContentViewController.m in Sources */,
 				B072723A1A5BA09C0094E809 /* MenuViewController.m in Sources */,
