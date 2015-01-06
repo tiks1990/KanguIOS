@@ -16,6 +16,18 @@
 		B066596F1A5AFE7300F00BF8 /* KanguTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B066596E1A5AFE7300F00BF8 /* KanguTests.m */; };
 		B06659791A5AFF2600F00BF8 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06659781A5AFF2600F00BF8 /* ExternalAccessory.framework */; };
 		B066597C1A5AFF4800F00BF8 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B066597B1A5AFF4800F00BF8 /* PassKit.framework */; };
+		B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B072720C1A5B1EE80094E809 /* LandingViewController.m */; };
+		B07272101A5B1EFC0094E809 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B072720F1A5B1EFC0094E809 /* LogInViewController.m */; };
+		B07272131A5B1F1E0094E809 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272121A5B1F1E0094E809 /* SignInViewController.m */; };
+		B07272161A5B34ED0094E809 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272141A5B34ED0094E809 /* background.png */; };
+		B07272171A5B34ED0094E809 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272151A5B34ED0094E809 /* logo.png */; };
+		B072721B1A5B7CE80094E809 /* KANGU LOGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B072721A1A5B7CE80094E809 /* KANGU LOGO.jpg */; };
+		B07272201A5B801B0094E809 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B072721F1A5B801B0094E809 /* TutorialViewController.m */; };
+		B07272231A5B80470094E809 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272221A5B80470094E809 /* PageContentViewController.m */; };
+		B07272271A5B828E0094E809 /* Tour1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272241A5B828E0094E809 /* Tour1.png */; };
+		B07272281A5B828E0094E809 /* Tour2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272251A5B828E0094E809 /* Tour2.png */; };
+		B07272291A5B828E0094E809 /* Tour3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272261A5B828E0094E809 /* Tour3.png */; };
+		B072722B1A5B8D260094E809 /* AppFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B072722A1A5B8D260094E809 /* AppFlow.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,25 @@
 		B06659781A5AFF2600F00BF8 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		B066597A1A5AFF2600F00BF8 /* Kangu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Kangu.entitlements; sourceTree = "<group>"; };
 		B066597B1A5AFF4800F00BF8 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		B072720B1A5B1EE80094E809 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		B072720C1A5B1EE80094E809 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		B072720E1A5B1EFC0094E809 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		B072720F1A5B1EFC0094E809 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		B07272111A5B1F1E0094E809 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		B07272121A5B1F1E0094E809 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		B07272141A5B34ED0094E809 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../images/background.png; sourceTree = "<group>"; };
+		B07272151A5B34ED0094E809 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../images/logo.png; sourceTree = "<group>"; };
+		B07272181A5B37C50094E809 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		B07272191A5B37C50094E809 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		B072721A1A5B7CE80094E809 /* KANGU LOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "KANGU LOGO.jpg"; path = "../../images/KANGU LOGO.jpg"; sourceTree = "<group>"; };
+		B072721E1A5B801B0094E809 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		B072721F1A5B801B0094E809 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		B07272211A5B80470094E809 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		B07272221A5B80470094E809 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		B07272241A5B828E0094E809 /* Tour1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tour1.png; path = ../../images/Tour1.png; sourceTree = "<group>"; };
+		B07272251A5B828E0094E809 /* Tour2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tour2.png; path = ../../images/Tour2.png; sourceTree = "<group>"; };
+		B07272261A5B828E0094E809 /* Tour3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tour3.png; path = ../../images/Tour3.png; sourceTree = "<group>"; };
+		B072722A1A5B8D260094E809 /* AppFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppFlow.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +124,20 @@
 				B066597A1A5AFF2600F00BF8 /* Kangu.entitlements */,
 				B06659561A5AFE7300F00BF8 /* AppDelegate.h */,
 				B06659571A5AFE7300F00BF8 /* AppDelegate.m */,
+				B072720B1A5B1EE80094E809 /* LandingViewController.h */,
+				B072720C1A5B1EE80094E809 /* LandingViewController.m */,
+				B072720E1A5B1EFC0094E809 /* LogInViewController.h */,
+				B072720F1A5B1EFC0094E809 /* LogInViewController.m */,
+				B07272111A5B1F1E0094E809 /* SignInViewController.h */,
+				B07272121A5B1F1E0094E809 /* SignInViewController.m */,
+				B072721E1A5B801B0094E809 /* TutorialViewController.h */,
+				B072721F1A5B801B0094E809 /* TutorialViewController.m */,
+				B07272211A5B80470094E809 /* PageContentViewController.h */,
+				B07272221A5B80470094E809 /* PageContentViewController.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
 				B066595A1A5AFE7300F00BF8 /* ViewController.m */,
 				B066595C1A5AFE7300F00BF8 /* Main.storyboard */,
+				B072722A1A5B8D260094E809 /* AppFlow.storyboard */,
 				B066595F1A5AFE7300F00BF8 /* Images.xcassets */,
 				B06659611A5AFE7300F00BF8 /* LaunchScreen.xib */,
 				B06659521A5AFE7300F00BF8 /* Supporting Files */,
@@ -106,6 +148,14 @@
 		B06659521A5AFE7300F00BF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B07272181A5B37C50094E809 /* OpenSans-Regular.ttf */,
+				B07272191A5B37C50094E809 /* OpenSans-Semibold.ttf */,
+				B07272241A5B828E0094E809 /* Tour1.png */,
+				B07272251A5B828E0094E809 /* Tour2.png */,
+				B07272261A5B828E0094E809 /* Tour3.png */,
+				B07272141A5B34ED0094E809 /* background.png */,
+				B072721A1A5B7CE80094E809 /* KANGU LOGO.jpg */,
+				B07272151A5B34ED0094E809 /* logo.png */,
 				B06659531A5AFE7300F00BF8 /* Info.plist */,
 				B06659541A5AFE7300F00BF8 /* main.m */,
 			);
@@ -218,7 +268,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07272281A5B828E0094E809 /* Tour2.png in Resources */,
+				B07272271A5B828E0094E809 /* Tour1.png in Resources */,
+				B072721B1A5B7CE80094E809 /* KANGU LOGO.jpg in Resources */,
 				B066595E1A5AFE7300F00BF8 /* Main.storyboard in Resources */,
+				B072722B1A5B8D260094E809 /* AppFlow.storyboard in Resources */,
+				B07272171A5B34ED0094E809 /* logo.png in Resources */,
+				B07272161A5B34ED0094E809 /* background.png in Resources */,
+				B07272291A5B828E0094E809 /* Tour3.png in Resources */,
 				B06659631A5AFE7300F00BF8 /* LaunchScreen.xib in Resources */,
 				B06659601A5AFE7300F00BF8 /* Images.xcassets in Resources */,
 			);
@@ -238,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07272201A5B801B0094E809 /* TutorialViewController.m in Sources */,
 				B066595B1A5AFE7300F00BF8 /* ViewController.m in Sources */,
 				B06659581A5AFE7300F00BF8 /* AppDelegate.m in Sources */,
+				B07272101A5B1EFC0094E809 /* LogInViewController.m in Sources */,
+				B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */,
+				B07272231A5B80470094E809 /* PageContentViewController.m in Sources */,
+				B07272131A5B1F1E0094E809 /* SignInViewController.m in Sources */,
 				B06659551A5AFE7300F00BF8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +501,7 @@
 				B06659741A5AFE7300F00BF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B06659751A5AFE7300F00BF8 /* Build configuration list for PBXNativeTarget "KanguTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +510,7 @@
 				B06659771A5AFE7300F00BF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
