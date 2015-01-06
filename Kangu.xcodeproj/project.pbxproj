@@ -31,6 +31,12 @@
 		B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B072722D1A5B8E4E0094E809 /* SWRevealViewController.m */; };
 		B07272311A5B8F1E0094E809 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272301A5B8F1E0094E809 /* CustomTabBarController.m */; };
 		B07272341A5B957C0094E809 /* UserRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272331A5B957C0094E809 /* UserRegistrationViewController.m */; };
+		B07272371A5BA0430094E809 /* molly.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272361A5BA0430094E809 /* molly.png */; };
+		B072723A1A5BA09C0094E809 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272391A5BA09C0094E809 /* MenuViewController.m */; };
+		B072723E1A5BA2280094E809 /* medalla.png in Resources */ = {isa = PBXBuildFile; fileRef = B072723D1A5BA2280094E809 /* medalla.png */; };
+		B07272401A5BA2B00094E809 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B072723F1A5BA2B00094E809 /* settings.png */; };
+		B07272421A5BA34D0094E809 /* likes.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272411A5BA34D0094E809 /* likes.png */; };
+		B07272441A5BA7F40094E809 /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272431A5BA7F40094E809 /* bluetooth.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +91,13 @@
 		B07272301A5B8F1E0094E809 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 		B07272321A5B957C0094E809 /* UserRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegistrationViewController.h; sourceTree = "<group>"; };
 		B07272331A5B957C0094E809 /* UserRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegistrationViewController.m; sourceTree = "<group>"; };
+		B07272361A5BA0430094E809 /* molly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = molly.png; path = ../../images/molly.png; sourceTree = "<group>"; };
+		B07272381A5BA09C0094E809 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B07272391A5BA09C0094E809 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B072723D1A5BA2280094E809 /* medalla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medalla.png; path = ../../images/medalla.png; sourceTree = "<group>"; };
+		B072723F1A5BA2B00094E809 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../images/settings.png; sourceTree = "<group>"; };
+		B07272411A5BA34D0094E809 /* likes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = likes.png; path = ../../images/likes.png; sourceTree = "<group>"; };
+		B07272431A5BA7F40094E809 /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluetooth.png; path = ../../images/bluetooth.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +151,10 @@
 				B07272351A5B9AED0094E809 /* Registro o inicio sesion */,
 				B072722F1A5B8F1E0094E809 /* CustomTabBarController.h */,
 				B07272301A5B8F1E0094E809 /* CustomTabBarController.m */,
+				B07272381A5BA09C0094E809 /* MenuViewController.h */,
+				B07272391A5BA09C0094E809 /* MenuViewController.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
 				B066595A1A5AFE7300F00BF8 /* ViewController.m */,
-				B066595C1A5AFE7300F00BF8 /* Main.storyboard */,
 				B072722A1A5B8D260094E809 /* AppFlow.storyboard */,
 				B066595F1A5AFE7300F00BF8 /* Images.xcassets */,
 				B06659611A5AFE7300F00BF8 /* LaunchScreen.xib */,
@@ -154,9 +168,14 @@
 			children = (
 				B07272181A5B37C50094E809 /* OpenSans-Regular.ttf */,
 				B07272191A5B37C50094E809 /* OpenSans-Semibold.ttf */,
+				B07272431A5BA7F40094E809 /* bluetooth.png */,
 				B07272241A5B828E0094E809 /* Tour1.png */,
 				B07272251A5B828E0094E809 /* Tour2.png */,
 				B07272261A5B828E0094E809 /* Tour3.png */,
+				B07272361A5BA0430094E809 /* molly.png */,
+				B07272411A5BA34D0094E809 /* likes.png */,
+				B072723F1A5BA2B00094E809 /* settings.png */,
+				B072723D1A5BA2280094E809 /* medalla.png */,
 				B07272141A5B34ED0094E809 /* background.png */,
 				B072721A1A5B7CE80094E809 /* KANGU LOGO.jpg */,
 				B07272151A5B34ED0094E809 /* logo.png */,
@@ -186,6 +205,7 @@
 		B07272351A5B9AED0094E809 /* Registro o inicio sesion */ = {
 			isa = PBXGroup;
 			children = (
+				B066595C1A5AFE7300F00BF8 /* Main.storyboard */,
 				B072720B1A5B1EE80094E809 /* LandingViewController.h */,
 				B072720C1A5B1EE80094E809 /* LandingViewController.m */,
 				B072720E1A5B1EFC0094E809 /* LogInViewController.h */,
@@ -293,9 +313,14 @@
 			files = (
 				B07272281A5B828E0094E809 /* Tour2.png in Resources */,
 				B07272271A5B828E0094E809 /* Tour1.png in Resources */,
+				B07272421A5BA34D0094E809 /* likes.png in Resources */,
+				B07272441A5BA7F40094E809 /* bluetooth.png in Resources */,
 				B072721B1A5B7CE80094E809 /* KANGU LOGO.jpg in Resources */,
 				B066595E1A5AFE7300F00BF8 /* Main.storyboard in Resources */,
 				B072722B1A5B8D260094E809 /* AppFlow.storyboard in Resources */,
+				B072723E1A5BA2280094E809 /* medalla.png in Resources */,
+				B07272371A5BA0430094E809 /* molly.png in Resources */,
+				B07272401A5BA2B00094E809 /* settings.png in Resources */,
 				B07272171A5B34ED0094E809 /* logo.png in Resources */,
 				B07272161A5B34ED0094E809 /* background.png in Resources */,
 				B07272291A5B828E0094E809 /* Tour3.png in Resources */,
@@ -325,6 +350,7 @@
 				B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */,
 				B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */,
 				B07272231A5B80470094E809 /* PageContentViewController.m in Sources */,
+				B072723A1A5BA09C0094E809 /* MenuViewController.m in Sources */,
 				B07272131A5B1F1E0094E809 /* SignInViewController.m in Sources */,
 				B07272311A5B8F1E0094E809 /* CustomTabBarController.m in Sources */,
 				B06659551A5AFE7300F00BF8 /* main.m in Sources */,
