@@ -32,7 +32,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)fbSign:(id)sender{
+    
+}
+-(IBAction)gSign:(id)sender{
+    
+}
 /*
 #pragma mark - Navigation
 

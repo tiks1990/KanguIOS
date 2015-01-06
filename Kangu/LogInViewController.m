@@ -7,6 +7,7 @@
 //
 
 #import "LogInViewController.h"
+#import "SWRevealViewController.h"
 
 @interface LogInViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *user;
@@ -43,6 +44,36 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)logIn:(id)sender{
+    if([self.user.text isEqualToString:@"heinz@proximity2u.com"])
+    {
+        if([self.password.text isEqualToString:@"qwerasdf"]){
+            UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"AppFlow" bundle:nil];
+            SWRevealViewController *vc = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"revealController"];
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+        else{
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Acceso invalido" message:@"Parece que has digitado la contraseña de forma errada" preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:okAction];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }
+    else{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Acceso invalido" message:@"El usuario no existe por favor verificalo o abre una cuenta con nosotros" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:okAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+  
+}
+-(IBAction)backgroundTouched:(id)sender{
+    [self.user resignFirstResponder];
+    [self.password resignFirstResponder];
 }
 
 /*

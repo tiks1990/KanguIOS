@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SignInViewController : UIViewController
+-(IBAction)fbSign:(id)sender;
+-(IBAction)gSign:(id)sender;
 
 @end

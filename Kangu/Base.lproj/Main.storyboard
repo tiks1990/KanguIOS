@@ -6,8 +6,14 @@
     <customFonts key="customFonts">
         <mutableArray key="OpenSans-Regular.ttf">
             <string>OpenSans</string>
+            <string>OpenSans</string>
         </mutableArray>
         <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
             <string>OpenSans-Semibold</string>
             <string>OpenSans-Semibold</string>
             <string>OpenSans-Semibold</string>
@@ -181,7 +187,7 @@
                         <viewControllerLayoutGuide type="top" id="kVb-8D-Q63"/>
                         <viewControllerLayoutGuide type="bottom" id="LR8-UQ-0ud"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ybx-aq-Kq9">
+                    <view key="view" contentMode="scaleToFill" id="ybx-aq-Kq9" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -222,6 +228,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logIn:" destination="SLD-II-1Zy" eventType="touchDown" id="VmJ-e7-0uv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have a account yet?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKX-GQ-PmU">
                                 <rect key="frame" x="59" y="379" width="203" height="21"/>
@@ -242,9 +251,15 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wDL-Hi-H7c" kind="show" id="zFj-BI-FSD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="SLD-II-1Zy" eventType="touchDown" id="pHl-5b-IiJ"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -309,6 +324,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="56Y-Th-IJV" kind="show" id="qa3-2s-dmt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt1-Ve-ahf">
                                 <rect key="frame" x="139" y="365" width="42" height="21"/>
@@ -324,6 +342,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="56Y-Th-IJV" kind="show" id="Yj9-Us-KN1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -339,10 +360,81 @@
             </objects>
             <point key="canvasLocation" x="1345" y="317"/>
         </scene>
+        <!--User Registration View Controller-->
+        <scene sceneID="uoa-Qs-Qr2">
+            <objects>
+                <viewController id="56Y-Th-IJV" customClass="UserRegistrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3UF-7e-0ED"/>
+                        <viewControllerLayoutGuide type="bottom" id="iMO-5V-aiE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jgo-Xz-zma" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pwo-Sl-x8x">
+                                <rect key="frame" x="16" y="125" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phB-YF-hs9">
+                                <rect key="frame" x="16" y="163" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AGE" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fca-k7-n0b">
+                                <rect key="frame" x="16" y="201" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8KV-k2-ceJ">
+                                <rect key="frame" x="16" y="239" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="REPEAT PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-6J-pfW">
+                                <rect key="frame" x="16" y="277" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9N-gN-FVS">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.71372549019999998" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="REGISTRARME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerUser:" destination="56Y-Th-IJV" eventType="touchDown" id="f1y-9o-t9h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="56Y-Th-IJV" eventType="touchDown" id="f75-Yw-OcF"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="age" destination="fca-k7-n0b" id="btR-D7-DI9"/>
+                        <outlet property="name" destination="phB-YF-hs9" id="BaJ-aq-RU1"/>
+                        <outlet property="password" destination="8KV-k2-ceJ" id="V1t-n1-x6P"/>
+                        <outlet property="user" destination="Pwo-Sl-x8x" id="WJv-FM-WVW"/>
+                        <outlet property="verifyPass" destination="2Jo-6J-pfW" id="NQU-bq-VWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fra-Am-JJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="317"/>
+        </scene>
     </scenes>
     <resources>
         <image name="KANGU LOGO.jpg" width="1633" height="1377"/>
         <image name="background.png" width="320" height="568"/>
         <image name="logo.png" width="180" height="171"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qa3-2s-dmt"/>
+    </inferredMetricsTieBreakers>
 </document>

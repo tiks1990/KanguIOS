@@ -1,5 +1,5 @@
 //
-//  LogInViewController.h
+//  UserRegistrationViewController.h
 //  Kangu
 //
 //  Created by Heinz Sohm on 1/5/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LogInViewController : UIViewController
--(IBAction)logIn:(id)sender;
+@interface UserRegistrationViewController : UIViewController
+-(IBAction)registerUser:(id)sender;
 -(IBAction)backgroundTouched:(id)sender;
 @end

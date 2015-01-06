@@ -28,6 +28,9 @@
 		B07272281A5B828E0094E809 /* Tour2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272251A5B828E0094E809 /* Tour2.png */; };
 		B07272291A5B828E0094E809 /* Tour3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272261A5B828E0094E809 /* Tour3.png */; };
 		B072722B1A5B8D260094E809 /* AppFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B072722A1A5B8D260094E809 /* AppFlow.storyboard */; };
+		B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B072722D1A5B8E4E0094E809 /* SWRevealViewController.m */; };
+		B07272311A5B8F1E0094E809 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272301A5B8F1E0094E809 /* CustomTabBarController.m */; };
+		B07272341A5B957C0094E809 /* UserRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07272331A5B957C0094E809 /* UserRegistrationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,12 @@
 		B07272251A5B828E0094E809 /* Tour2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tour2.png; path = ../../images/Tour2.png; sourceTree = "<group>"; };
 		B07272261A5B828E0094E809 /* Tour3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tour3.png; path = ../../images/Tour3.png; sourceTree = "<group>"; };
 		B072722A1A5B8D260094E809 /* AppFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppFlow.storyboard; sourceTree = "<group>"; };
+		B072722C1A5B8E4E0094E809 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SlideOutMenuFiles/SWRevealViewController.h; sourceTree = "<group>"; };
+		B072722D1A5B8E4E0094E809 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SlideOutMenuFiles/SWRevealViewController.m; sourceTree = "<group>"; };
+		B072722F1A5B8F1E0094E809 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		B07272301A5B8F1E0094E809 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		B07272321A5B957C0094E809 /* UserRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegistrationViewController.h; sourceTree = "<group>"; };
+		B07272331A5B957C0094E809 /* UserRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegistrationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,16 +133,11 @@
 				B066597A1A5AFF2600F00BF8 /* Kangu.entitlements */,
 				B06659561A5AFE7300F00BF8 /* AppDelegate.h */,
 				B06659571A5AFE7300F00BF8 /* AppDelegate.m */,
-				B072720B1A5B1EE80094E809 /* LandingViewController.h */,
-				B072720C1A5B1EE80094E809 /* LandingViewController.m */,
-				B072720E1A5B1EFC0094E809 /* LogInViewController.h */,
-				B072720F1A5B1EFC0094E809 /* LogInViewController.m */,
-				B07272111A5B1F1E0094E809 /* SignInViewController.h */,
-				B07272121A5B1F1E0094E809 /* SignInViewController.m */,
-				B072721E1A5B801B0094E809 /* TutorialViewController.h */,
-				B072721F1A5B801B0094E809 /* TutorialViewController.m */,
-				B07272211A5B80470094E809 /* PageContentViewController.h */,
-				B07272221A5B80470094E809 /* PageContentViewController.m */,
+				B072722C1A5B8E4E0094E809 /* SWRevealViewController.h */,
+				B072722D1A5B8E4E0094E809 /* SWRevealViewController.m */,
+				B07272351A5B9AED0094E809 /* Registro o inicio sesion */,
+				B072722F1A5B8F1E0094E809 /* CustomTabBarController.h */,
+				B07272301A5B8F1E0094E809 /* CustomTabBarController.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
 				B066595A1A5AFE7300F00BF8 /* ViewController.m */,
 				B066595C1A5AFE7300F00BF8 /* Main.storyboard */,
@@ -177,6 +181,25 @@
 				B066596D1A5AFE7300F00BF8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07272351A5B9AED0094E809 /* Registro o inicio sesion */ = {
+			isa = PBXGroup;
+			children = (
+				B072720B1A5B1EE80094E809 /* LandingViewController.h */,
+				B072720C1A5B1EE80094E809 /* LandingViewController.m */,
+				B072720E1A5B1EFC0094E809 /* LogInViewController.h */,
+				B072720F1A5B1EFC0094E809 /* LogInViewController.m */,
+				B07272111A5B1F1E0094E809 /* SignInViewController.h */,
+				B07272121A5B1F1E0094E809 /* SignInViewController.m */,
+				B07272321A5B957C0094E809 /* UserRegistrationViewController.h */,
+				B07272331A5B957C0094E809 /* UserRegistrationViewController.m */,
+				B072721E1A5B801B0094E809 /* TutorialViewController.h */,
+				B072721F1A5B801B0094E809 /* TutorialViewController.m */,
+				B07272211A5B80470094E809 /* PageContentViewController.h */,
+				B07272221A5B80470094E809 /* PageContentViewController.m */,
+			);
+			name = "Registro o inicio sesion";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +323,12 @@
 				B06659581A5AFE7300F00BF8 /* AppDelegate.m in Sources */,
 				B07272101A5B1EFC0094E809 /* LogInViewController.m in Sources */,
 				B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */,
+				B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */,
 				B07272231A5B80470094E809 /* PageContentViewController.m in Sources */,
 				B07272131A5B1F1E0094E809 /* SignInViewController.m in Sources */,
+				B07272311A5B8F1E0094E809 /* CustomTabBarController.m in Sources */,
 				B06659551A5AFE7300F00BF8 /* main.m in Sources */,
+				B07272341A5B957C0094E809 /* UserRegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
