@@ -513,7 +513,7 @@
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" patternImage="5E5F4BD5-A68B-45F9-B8C8-A3DA1F90B15F" colorSpace="pattern"/>
+                                <color key="tintColor" patternImage="B11EFE6F-E00B-43CF-ACDC-F5D4DA3D71B5" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="FIB-d9-UPQ"/>
                                 </constraints>
@@ -539,7 +539,7 @@
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" patternImage="A9EB5765-D187-47FC-8DCF-00462AD265BF" colorSpace="pattern"/>
+                                <color key="tintColor" patternImage="3AAFA749-C37A-4D87-ACA6-6C474C531E59" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="mxq-w0-hbs"/>
                                 </constraints>
@@ -763,7 +763,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5E5F4BD5-A68B-45F9-B8C8-A3DA1F90B15F" width="256" height="256">
+        <image name="3AAFA749-C37A-4D87-ACA6-6C474C531E59" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
@@ -5210,7 +5210,7 @@ D4MABA+LAAQPjgAED6AABA+jAAQPqAAAAAAAAAQBAAAAAAAAAFIAAAAAAAAAAAAAAAAABA+qA
 </mutableData>
         </image>
         <image name="766-arrow-right" width="42" height="84"/>
-        <image name="A9EB5765-D187-47FC-8DCF-00462AD265BF" width="256" height="256">
+        <image name="B11EFE6F-E00B-43CF-ACDC-F5D4DA3D71B5" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW
