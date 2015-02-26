@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TiendaCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *heartBut;
+@property (weak, nonatomic) IBOutlet UIImageView *logo;
+@property (weak, nonatomic) IBOutlet UIImageView *backImage;
 
 @end

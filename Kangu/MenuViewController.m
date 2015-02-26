@@ -22,7 +22,7 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     
-    menu=@[@"MI PERFIL",@"CUPONES A REDIMIR", @"MEDALLAS A REDIMIR" , @"LOGOUT"];
+    menu=@[@"GEO-LOC PROFILE",@"PERFIL COMPRAS", @"MI CUENTA" , @"PRIVACIDAD", @"TERMINOS DE USO",@"SOBRE NOSOTROS",@"HOME"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,8 +33,9 @@
     return [menu count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menuCell" forIndexPath:indexPath];
-    cell.textLabel.text=[menu objectAtIndex:indexPath.row];
+    NSString *CellIdentifier = [menu objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text=CellIdentifier;
     cell.textLabel.textColor=[UIColor whiteColor];
     cell.textLabel.font=[UIFont fontWithName:@"OpenSans-Semibold" size:14];
     return cell;

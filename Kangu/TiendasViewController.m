@@ -22,8 +22,8 @@
     tiendas=@[@"ZARA",@"GMO", @"AEROPOSTAL", @"NORTH FACE"];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
-    UINib *theNib = [UINib nibWithNibName:@"TiendaCell" bundle:nil];
-    [self.tableView registerNib:theNib forCellReuseIdentifier:@"tiendaCell"];
+    //UINib *theNib = [UINib nibWithNibName:@"DetailsTableViewCell" bundle:nil];
+    //[self.tableView registerNib:theNib forCellReuseIdentifier:@"tiendaCell"];
     // Do any additional setup after loading the view.
 }
 
@@ -32,7 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 160;
+    return 150;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [tiendas count];
@@ -43,6 +43,10 @@
         cell = [[TiendaCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tiendaCell"];
     }
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+   
 }
 
 /*

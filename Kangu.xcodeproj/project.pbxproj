@@ -43,6 +43,13 @@
 		B072724E1A5BB1C70094E809 /* TiendaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B072724C1A5BB1C70094E809 /* TiendaCell.xib */; };
 		B07272501A5BB2BF0094E809 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B072724F1A5BB2BF0094E809 /* image.png */; };
 		B07272521A5BB4830094E809 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07272511A5BB4830094E809 /* logo1.png */; };
+		B0CB4D001A9E0D7200E6577E /* estrella.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CB4CFE1A9E0D7200E6577E /* estrella.png */; };
+		B0CB4D011A9E0D7200E6577E /* estrellaAmarilla.png in Resources */ = {isa = PBXBuildFile; fileRef = B0CB4CFF1A9E0D7200E6577E /* estrellaAmarilla.png */; };
+		B0D1A6411A9ED1380082F489 /* UserSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D1A6401A9ED1380082F489 /* UserSettingsViewController.m */; };
+		B0D3B1891A9D41CF008571C0 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D3B1881A9D41CF008571C0 /* DetailsTableViewCell.xib */; };
+		B0D3B18B1A9D41D9008571C0 /* DetalleProductoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D3B18A1A9D41D9008571C0 /* DetalleProductoCollectionViewCell.xib */; };
+		B0D3B18E1A9D4480008571C0 /* DetalleProductoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D3B18D1A9D4480008571C0 /* DetalleProductoCollectionViewCell.m */; };
+		B0D3B1911A9D4517008571C0 /* ProductosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D3B1901A9D4517008571C0 /* ProductosViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +119,16 @@
 		B072724C1A5BB1C70094E809 /* TiendaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiendaCell.xib; sourceTree = "<group>"; };
 		B072724F1A5BB2BF0094E809 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = ../../images/image.png; sourceTree = "<group>"; };
 		B07272511A5BB4830094E809 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = ../../images/logo1.png; sourceTree = "<group>"; };
+		B0CB4CFE1A9E0D7200E6577E /* estrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = estrella.png; path = ../../images/estrella.png; sourceTree = "<group>"; };
+		B0CB4CFF1A9E0D7200E6577E /* estrellaAmarilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = estrellaAmarilla.png; path = ../../images/estrellaAmarilla.png; sourceTree = "<group>"; };
+		B0D1A63F1A9ED1380082F489 /* UserSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsViewController.h; sourceTree = "<group>"; };
+		B0D1A6401A9ED1380082F489 /* UserSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsViewController.m; sourceTree = "<group>"; };
+		B0D3B1881A9D41CF008571C0 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		B0D3B18A1A9D41D9008571C0 /* DetalleProductoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleProductoCollectionViewCell.xib; sourceTree = "<group>"; };
+		B0D3B18C1A9D4480008571C0 /* DetalleProductoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleProductoCollectionViewCell.h; sourceTree = "<group>"; };
+		B0D3B18D1A9D4480008571C0 /* DetalleProductoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleProductoCollectionViewCell.m; sourceTree = "<group>"; };
+		B0D3B18F1A9D4517008571C0 /* ProductosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductosViewController.h; sourceTree = "<group>"; };
+		B0D3B1901A9D4517008571C0 /* ProductosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductosViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +186,19 @@
 				B07272391A5BA09C0094E809 /* MenuViewController.m */,
 				B07272471A5BAB850094E809 /* TiendasViewController.h */,
 				B07272481A5BAB850094E809 /* TiendasViewController.m */,
+				B0D3B18F1A9D4517008571C0 /* ProductosViewController.h */,
+				B0D3B1901A9D4517008571C0 /* ProductosViewController.m */,
+				B0D1A63F1A9ED1380082F489 /* UserSettingsViewController.h */,
+				B0D1A6401A9ED1380082F489 /* UserSettingsViewController.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
 				B066595A1A5AFE7300F00BF8 /* ViewController.m */,
 				B072724A1A5BB1C70094E809 /* TiendaCell.h */,
 				B072724B1A5BB1C70094E809 /* TiendaCell.m */,
 				B072724C1A5BB1C70094E809 /* TiendaCell.xib */,
+				B0D3B18A1A9D41D9008571C0 /* DetalleProductoCollectionViewCell.xib */,
+				B0D3B18C1A9D4480008571C0 /* DetalleProductoCollectionViewCell.h */,
+				B0D3B18D1A9D4480008571C0 /* DetalleProductoCollectionViewCell.m */,
+				B0D3B1881A9D41CF008571C0 /* DetailsTableViewCell.xib */,
 				B072722A1A5B8D260094E809 /* AppFlow.storyboard */,
 				B066595F1A5AFE7300F00BF8 /* Images.xcassets */,
 				B06659611A5AFE7300F00BF8 /* LaunchScreen.xib */,
@@ -188,6 +213,8 @@
 				B07272181A5B37C50094E809 /* OpenSans-Regular.ttf */,
 				B07272191A5B37C50094E809 /* OpenSans-Semibold.ttf */,
 				B07272431A5BA7F40094E809 /* bluetooth.png */,
+				B0CB4CFE1A9E0D7200E6577E /* estrella.png */,
+				B0CB4CFF1A9E0D7200E6577E /* estrellaAmarilla.png */,
 				B072724F1A5BB2BF0094E809 /* image.png */,
 				B07272241A5B828E0094E809 /* Tour1.png */,
 				B07272251A5B828E0094E809 /* Tour2.png */,
@@ -343,13 +370,17 @@
 				B066595E1A5AFE7300F00BF8 /* Main.storyboard in Resources */,
 				B072722B1A5B8D260094E809 /* AppFlow.storyboard in Resources */,
 				B072723E1A5BA2280094E809 /* medalla.png in Resources */,
+				B0D3B1891A9D41CF008571C0 /* DetailsTableViewCell.xib in Resources */,
 				B07272371A5BA0430094E809 /* molly.png in Resources */,
 				B07272401A5BA2B00094E809 /* settings.png in Resources */,
+				B0D3B18B1A9D41D9008571C0 /* DetalleProductoCollectionViewCell.xib in Resources */,
 				B07272171A5B34ED0094E809 /* logo.png in Resources */,
 				B07272161A5B34ED0094E809 /* background.png in Resources */,
 				B07272291A5B828E0094E809 /* Tour3.png in Resources */,
+				B0CB4D011A9E0D7200E6577E /* estrellaAmarilla.png in Resources */,
 				B072724E1A5BB1C70094E809 /* TiendaCell.xib in Resources */,
 				B06659631A5AFE7300F00BF8 /* LaunchScreen.xib in Resources */,
+				B0CB4D001A9E0D7200E6577E /* estrella.png in Resources */,
 				B06659601A5AFE7300F00BF8 /* Images.xcassets in Resources */,
 				B07272501A5BB2BF0094E809 /* image.png in Resources */,
 			);
@@ -372,13 +403,16 @@
 				B07272201A5B801B0094E809 /* TutorialViewController.m in Sources */,
 				B066595B1A5AFE7300F00BF8 /* ViewController.m in Sources */,
 				B06659581A5AFE7300F00BF8 /* AppDelegate.m in Sources */,
+				B0D1A6411A9ED1380082F489 /* UserSettingsViewController.m in Sources */,
 				B07272101A5B1EFC0094E809 /* LogInViewController.m in Sources */,
 				B072724D1A5BB1C70094E809 /* TiendaCell.m in Sources */,
 				B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */,
+				B0D3B1911A9D4517008571C0 /* ProductosViewController.m in Sources */,
 				B07272491A5BAB850094E809 /* TiendasViewController.m in Sources */,
 				B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */,
 				B07272231A5B80470094E809 /* PageContentViewController.m in Sources */,
 				B072723A1A5BA09C0094E809 /* MenuViewController.m in Sources */,
+				B0D3B18E1A9D4480008571C0 /* DetalleProductoCollectionViewCell.m in Sources */,
 				B07272131A5B1F1E0094E809 /* SignInViewController.m in Sources */,
 				B07272311A5B8F1E0094E809 /* CustomTabBarController.m in Sources */,
 				B06659551A5AFE7300F00BF8 /* main.m in Sources */,

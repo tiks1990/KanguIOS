@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.locationManager = [[CLLocationManager alloc]init];
+    self.centralManager=[[CBCentralManager alloc] init];
     _pageImages=@[@"Tour1.png",@"Tour2.png",@"Tour3.png"];
     self.pageViewController=[self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource=self;
@@ -74,6 +76,16 @@
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
     pageContentViewController.imageFile=self.pageImages[index];
     pageContentViewController.pageIndex = index;
+    if (index==0) {
+        NSLog(@"Entre 1");
+        [self.locationManager requestAlwaysAuthorization];
+    }
+    else if (index == 1){
+        NSLog(@"Entre 2");
+    }
+    else{
+        NSLog(@"Entre 3");
+    }
     
     return pageContentViewController;
 }
