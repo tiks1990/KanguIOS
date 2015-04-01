@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "VelezBanner.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "VelezBanner-1.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "VelezBanner-2.pdf"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
