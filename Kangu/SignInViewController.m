@@ -28,6 +28,7 @@
     [[self.signG layer] setBorderColor:[UIColor colorWithRed:(255/255.0) green:(16/255.0) blue:(50/255.0) alpha:1].CGColor];
     [[self.signEMAIL layer] setBorderWidth:1.0f];
     [[self.signEMAIL layer] setBorderColor:[UIColor colorWithRed:(164/255.0) green:(164/255.0) blue:(164/255.0) alpha:1].CGColor];
+    
     // Do any additional setup after loading the view.
 }
 
