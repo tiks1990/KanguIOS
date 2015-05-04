@@ -7,6 +7,9 @@
 //
 
 #import "SignInViewController.h"
+#import <Parse/Parse.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "SWRevealViewController.h"
 
 @interface SignInViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *signFB;
@@ -25,6 +28,7 @@
     [[self.signG layer] setBorderColor:[UIColor colorWithRed:(255/255.0) green:(16/255.0) blue:(50/255.0) alpha:1].CGColor];
     [[self.signEMAIL layer] setBorderWidth:1.0f];
     [[self.signEMAIL layer] setBorderColor:[UIColor colorWithRed:(164/255.0) green:(164/255.0) blue:(164/255.0) alpha:1].CGColor];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -33,6 +37,21 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)fbSign:(id)sender{
+    [PFFacebookUtils logInWithPermissions:@[@"public_profile",@"user_friends"]block:^(PFUser *user, NSError *error) {
+        if (!user) {
+            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+        } else if (user.isNew) {
+            NSLog(@"User signed up and logged in through Facebook!");
+            UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"AppFlow" bundle:nil];
+            SWRevealViewController *vc = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"revealController"];
+            [self presentViewController:vc animated:YES completion:nil];
+        } else {
+            NSLog(@"User logged in through Facebook!");
+            UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"AppFlow" bundle:nil];
+            SWRevealViewController *vc = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"revealController"];
+            [self presentViewController:vc animated:YES completion:nil];
+        }
+    }];
     
 }
 -(IBAction)gSign:(id)sender{

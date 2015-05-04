@@ -8,6 +8,7 @@
 
 #import "TiendasViewController.h"
 #import "TiendaCell.h"
+#import <Parse/Parse.h>
 
 @interface TiendasViewController ()
 
@@ -22,6 +23,24 @@
     tiendas=@[@"ZARA",@"GMO", @"AEROPOSTAL", @"NORTH FACE"];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
+    
+    NSLog(@"Getting the latest config...");
+    [PFConfig getConfigInBackgroundWithBlock:^(PFConfig *config, NSError *error) {
+        if (!error) {
+            NSLog(@"Yay! Config was fetched from the server.");
+        } else {
+            NSLog(@"Failed to fetch. Using Cached Config.");
+            config = [PFConfig currentConfig];
+        }
+        
+        NSString *welcomeMessage = config[@"testMessage"];
+        if (!welcomeMessage) {
+            NSLog(@"Falling back to default message.");
+            welcomeMessage = @"Welcome!";
+        }
+        NSLog(@"Welcome Messsage = %@", welcomeMessage);
+    }];
+    
     //UINib *theNib = [UINib nibWithNibName:@"DetailsTableViewCell" bundle:nil];
     //[self.tableView registerNib:theNib forCellReuseIdentifier:@"tiendaCell"];
     // Do any additional setup after loading the view.

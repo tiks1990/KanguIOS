@@ -47,7 +47,10 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)logIn:(id)sender{
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/master
     [PFUser logInWithUsernameInBackground:self.user.text password:self.password.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
@@ -65,7 +68,11 @@
                                                 
                                             }
                                             // Do stuff after successful login.
+<<<<<<< HEAD
                                       
+=======
+                                            
+>>>>>>> origin/master
                                         } else {
                                             // The login failed. Check error to see why.
                                             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Acceso invalido" message:@"El usuario no existe por favor verificalo o abre una cuenta con nosotros" preferredStyle:UIAlertControllerStyleAlert];

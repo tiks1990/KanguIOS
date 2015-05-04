@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "MTMovintracks.h"
 
 @interface MenuViewController ()
 
@@ -23,6 +24,7 @@
     self.tableView.dataSource=self;
     
     menu=@[@"GEO-LOC PROFILE",@"PERFIL COMPRAS", @"MI CUENTA" , @"PRIVACIDAD", @"TERMINOS DE USO",@"SOBRE NOSOTROS",@"HOME"];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openModalView:) name:kShowModalViewNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +41,10 @@
     cell.textLabel.textColor=[UIColor whiteColor];
     cell.textLabel.font=[UIFont fontWithName:@"OpenSans-Semibold" size:14];
     return cell;
+}
+- (void) openModalView: (NSNotification*) notification{
+    UIViewController* view=notification.object;
+    [self presentViewController: view animated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation

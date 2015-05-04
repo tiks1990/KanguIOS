@@ -10,11 +10,16 @@
 #import "TutorialViewController.h"
 #import "LogInViewController.h"
 #import "SignInViewController.h"
+<<<<<<< HEAD
 #import <Parse/Parse.h>
+=======
+#import "MTMovintracks.h"
+>>>>>>> origin/master
 @interface LandingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *logIn;
 @property (weak, nonatomic) IBOutlet UIButton *signUp;
 @property (weak, nonatomic) IBOutlet UIButton *tour;
+@property (weak, nonatomic) IBOutlet UILabel *labelPruebas;
 
 @end
 
@@ -24,10 +29,14 @@
     [super viewDidLoad];
     [[self.tour layer] setBorderWidth:1.0f];
     [[self.tour layer] setBorderColor:[UIColor whiteColor].CGColor];
+<<<<<<< HEAD
     PFObject *testObject = [PFObject objectWithClassName:@"Prueba"];
     testObject[@"item1"] = @"bar";
     testObject[@"tienda"] = @"hola";
     [testObject saveInBackground];
+=======
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(beaconsListened:) name:kNumberBeaconsNotification object:nil];
+>>>>>>> origin/master
     // Do any additional setup after loading the view.
 }
 
@@ -51,6 +60,11 @@
     SignInViewController *vc = (SignInViewController *)[storyboard instantiateViewControllerWithIdentifier:@"signup"];
     [self presentViewController:vc animated:YES completion:nil];
     
+}
+- (void) beaconsListened: (NSNotification*) notification{
+    if (notification.object && [notification.object isKindOfClass:[NSNumber class]]){
+        _labelPruebas.text=[[NSString alloc] initWithFormat:@"Visible beacons: %@", notification.object];
+    }
 }
 
 /*
