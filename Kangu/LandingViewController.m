@@ -10,6 +10,7 @@
 #import "TutorialViewController.h"
 #import "LogInViewController.h"
 #import "SignInViewController.h"
+#import <Parse/Parse.h>
 @interface LandingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *logIn;
 @property (weak, nonatomic) IBOutlet UIButton *signUp;
@@ -23,6 +24,10 @@
     [super viewDidLoad];
     [[self.tour layer] setBorderWidth:1.0f];
     [[self.tour layer] setBorderColor:[UIColor whiteColor].CGColor];
+    PFObject *testObject = [PFObject objectWithClassName:@"Prueba"];
+    testObject[@"item1"] = @"bar";
+    testObject[@"tienda"] = @"hola";
+    [testObject saveInBackground];
     // Do any additional setup after loading the view.
 }
 

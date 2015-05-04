@@ -8,6 +8,7 @@
 
 #import "UserRegistrationViewController.h"
 #import "SWRevealViewController.h"
+#import <Parse/Parse.h>
 
 @interface UserRegistrationViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *user;
@@ -30,12 +31,30 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)registerUser:(id)sender{
+    
+    
     if ([self.user.text containsString:@"@"]) {
         if (![self.name.text isEqualToString:@""]) {
             if ([self.password.text isEqualToString:self.verifyPass.text]) {
-                UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"AppFlow" bundle:nil];
-                SWRevealViewController *vc = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"revealController"];
-                [self presentViewController:vc animated:YES completion:nil];
+                
+                PFUser *user = [PFUser user];
+                user.username = self.user.text;
+                user.password = self.password.text;
+                user.email = self.user.text;
+                
+                
+                [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (!error) {
+                        UIStoryboard *storyboard= [UIStoryboard storyboardWithName:@"AppFlow" bundle:nil];
+                        SWRevealViewController *vc = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"revealController"];
+                        [self presentViewController:vc animated:YES completion:nil];
+                        // Hooray! Let them use the app now.
+                    } else {
+                        NSString *errorString = [error userInfo][@"error"];
+                        // Show the errorString somewhere and let the user try again.
+                    }
+                }];
+                
             }
             else{
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error en registro" message:@"Las contraseñas ingresadas no coinciden" preferredStyle:UIAlertControllerStyleAlert];

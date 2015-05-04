@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42D67A61-B89F-4DF0-BD84-26F010EF09FA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kangu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9620D2B2FEAC70BC8F9435FCCC01D042B982AF08</key>
+		<string>https://github.com/tiks1990/KanguIOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kangu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9620D2B2FEAC70BC8F9435FCCC01D042B982AF08</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tiks1990/KanguIOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9620D2B2FEAC70BC8F9435FCCC01D042B982AF08</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9620D2B2FEAC70BC8F9435FCCC01D042B982AF08</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Kangu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
