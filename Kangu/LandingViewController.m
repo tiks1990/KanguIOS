@@ -34,13 +34,13 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)presentTutorial:(id)sender{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Initial" bundle:nil];
     TutorialViewController *vc = (TutorialViewController *)[storyboard instantiateViewControllerWithIdentifier:@"tutorial"];
     [self presentViewController:vc animated:YES completion:nil];
     
 }
 -(IBAction) logInPressed:(id)sender{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Initial" bundle:nil];
     LogInViewController *vc = (LogInViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
     [self presentViewController:vc animated:YES completion:nil];
 }
@@ -51,6 +51,7 @@
     
 }
 - (void) beaconsListened: (NSNotification*) notification{
+    NSLog(@"ACA ENTRE O QUE?");
     if (notification.object && [notification.object isKindOfClass:[NSNumber class]]){
         _labelPruebas.text=[[NSString alloc] initWithFormat:@"Visible beacons: %@", notification.object];
     }

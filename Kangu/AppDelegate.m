@@ -11,7 +11,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import <FacebookSDK/FacebookSDK.h>
-
+NSString *const BFTaskMultipleExceptionsException = @"BFMultipleExceptionsException";
 
 @interface AppDelegate ()
 
