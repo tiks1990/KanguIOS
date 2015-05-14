@@ -1212,11 +1212,8 @@
                                     <navigationItem title="Title" id="Swh-Ap-P07"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-xc-m9K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RgB-xc-m9K">
                                 <rect key="frame" x="0.0" y="64" width="605" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="Gsr-1P-bvN"/>
-                                </constraints>
                             </imageView>
                             <visualEffectView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JR5-iX-ymH">
                                 <rect key="frame" x="0.0" y="64" width="320" height="48"/>
@@ -1238,19 +1235,19 @@
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" patternImage="A1DFEA41-8326-4172-B21C-B3A71F8AFCB9" colorSpace="pattern"/>
+                                <color key="tintColor" patternImage="07DC541B-4BBB-4610-AF40-5072FAC0036E" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="FIB-d9-UPQ"/>
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <visualEffectView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-rI-S4g">
+                            <visualEffectView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-rI-S4g">
                                 <rect key="frame" x="0.0" y="286" width="320" height="48"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V5t-fq-Gqe">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="V5t-fq-Gqe">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShF-Ja-msl">
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShF-Ja-msl">
                                             <rect key="frame" x="17" y="9" width="567" height="30"/>
                                             <state key="normal" title="Nombre de tienda">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1264,29 +1261,29 @@
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" patternImage="99DA8519-1AC9-469C-B021-AEEE3F772E23" colorSpace="pattern"/>
+                                <color key="tintColor" patternImage="ABC30768-D34F-4815-AD9C-352F482AB848" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="mxq-w0-hbs"/>
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsn-OO-suS">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsn-OO-suS">
                                 <rect key="frame" x="0.0" y="333" width="320" height="235"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-www.fuimonos.co" translatesAutoresizingMaskIntoConstraints="NO" id="3UB-hp-c0f">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="qr-www.fuimonos.co" translatesAutoresizingMaskIntoConstraints="NO" id="3UB-hp-c0f">
                                         <rect key="frame" x="8" y="8" width="96" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="96" id="c20-Ky-zdQ"/>
                                             <constraint firstAttribute="height" constant="100" id="xnx-Zd-TiW"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOk-AZ-Hhw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOk-AZ-Hhw">
                                         <rect key="frame" x="118" y="13" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalle del descuento como terminos y condiciones o restricciones de este. aqui puede darse mas infomracion" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYw-Ti-V76">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Detalle del descuento como terminos y condiciones o restricciones de este. aqui puede darse mas infomracion" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYw-Ti-V76">
                                         <rect key="frame" x="118" y="36" width="194" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="PCa-Qr-4hO"/>
@@ -1295,13 +1292,13 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mostrar al cajero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F4-NQ-rfl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mostrar al cajero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F4-NQ-rfl">
                                         <rect key="frame" x="52" y="162" width="205" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba3-H8-biz">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba3-H8-biz">
                                         <rect key="frame" x="146" y="118" width="40" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="2bx-1i-ikl"/>
@@ -1780,11 +1777,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tqG-dI-eO0" firstAttribute="top" secondItem="KHh-hY-Wds" secondAttribute="bottom" id="3Tq-Bd-tbc"/>
                             <constraint firstAttribute="trailing" secondItem="8OM-fv-qHb" secondAttribute="trailing" id="576-ci-ei3"/>
                             <constraint firstItem="eVF-7F-pXb" firstAttribute="top" secondItem="8OM-fv-qHb" secondAttribute="bottom" constant="-1" id="63Y-td-btG"/>
                             <constraint firstItem="Fsq-27-pHm" firstAttribute="top" secondItem="TrE-fs-H22" secondAttribute="bottom" id="7Q3-Wi-g2D"/>
-                            <constraint firstItem="Fsq-27-pHm" firstAttribute="bottom" secondItem="lJX-YS-SFl" secondAttribute="top" id="Apn-Z9-9r7"/>
+                            <constraint firstItem="Fsq-27-pHm" firstAttribute="bottom" secondItem="lJX-YS-SFl" secondAttribute="top" id="E3q-jl-UvD"/>
                             <constraint firstItem="8OM-fv-qHb" firstAttribute="leading" secondItem="pwj-ma-cAR" secondAttribute="leading" id="GCX-Yn-pWO"/>
                             <constraint firstAttribute="trailing" secondItem="eVF-7F-pXb" secondAttribute="trailing" id="Maf-q7-9P3"/>
                             <constraint firstItem="eVF-7F-pXb" firstAttribute="leading" secondItem="pwj-ma-cAR" secondAttribute="leading" id="PEv-Bc-cI4"/>
@@ -1795,6 +1791,7 @@
                             <constraint firstItem="8OM-fv-qHb" firstAttribute="top" secondItem="tqG-dI-eO0" secondAttribute="bottom" id="d9z-eQ-10W"/>
                             <constraint firstAttribute="trailing" secondItem="tqG-dI-eO0" secondAttribute="trailing" id="hfN-wd-dAO"/>
                             <constraint firstItem="TrE-fs-H22" firstAttribute="leading" secondItem="Fsq-27-pHm" secondAttribute="leading" id="pdg-tX-rqc"/>
+                            <constraint firstItem="tqG-dI-eO0" firstAttribute="top" secondItem="KHh-hY-Wds" secondAttribute="bottom" id="yhV-k7-6oQ"/>
                             <constraint firstItem="tqG-dI-eO0" firstAttribute="leading" secondItem="pwj-ma-cAR" secondAttribute="leading" id="ynn-LH-ani"/>
                         </constraints>
                     </view>
@@ -1806,7 +1803,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="99DA8519-1AC9-469C-B021-AEEE3F772E23" width="256" height="256">
+        <image name="07DC541B-4BBB-4610-AF40-5072FAC0036E" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -6248,7 +6245,7 @@ BA6JAAQOkQAEDp4ABA6jAAQOpQAEDqcABA6sAAQOtAAEDrcABA68AAQOxAAEDscABA7ZAAQO3AAEDuEA
 AAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQO4w
 </mutableData>
         </image>
-        <image name="A1DFEA41-8326-4172-B21C-B3A71F8AFCB9" width="256" height="256">
+        <image name="ABC30768-D34F-4815-AD9C-352F482AB848" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

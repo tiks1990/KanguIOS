@@ -10,6 +10,9 @@
 		5380C6F4F510EB4571BEB708 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD65F57D82745585D5EFB27 /* libPods.a */; };
 		B03D1FC31AFF0F4900C72077 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03D1FC21AFF0F4900C72077 /* Initial.storyboard */; };
 		B03D1FC51AFF374100C72077 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03D1FC41AFF374100C72077 /* User.storyboard */; };
+		B03D1FC81B01B9A000C72077 /* SucursalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03D1FC71B01B9A000C72077 /* SucursalesViewController.m */; };
+		B03D1FCB1B01BE6E00C72077 /* TiendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03D1FCA1B01BE6E00C72077 /* TiendaViewController.m */; };
+		B03D1FCE1B01BF2600C72077 /* OfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03D1FCD1B01BF2600C72077 /* OfferViewController.m */; };
 		B05EF7861ACBA4FB0040C352 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05EF7851ACBA4FB0040C352 /* Parse.framework */; };
 		B05EF7881ACBA52F0040C352 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B05EF7871ACBA52F0040C352 /* libsqlite3.dylib */; };
 		B05EF78A1ACBA5380040C352 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B05EF7891ACBA5380040C352 /* libz.dylib */; };
@@ -89,6 +92,12 @@
 		9A6F623698FF8D9E489F5E75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B03D1FC21AFF0F4900C72077 /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		B03D1FC41AFF374100C72077 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		B03D1FC61B01B9A000C72077 /* SucursalesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SucursalesViewController.h; sourceTree = "<group>"; };
+		B03D1FC71B01B9A000C72077 /* SucursalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SucursalesViewController.m; sourceTree = "<group>"; };
+		B03D1FC91B01BE6E00C72077 /* TiendaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiendaViewController.h; sourceTree = "<group>"; };
+		B03D1FCA1B01BE6E00C72077 /* TiendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiendaViewController.m; sourceTree = "<group>"; };
+		B03D1FCC1B01BF2600C72077 /* OfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferViewController.h; sourceTree = "<group>"; };
+		B03D1FCD1B01BF2600C72077 /* OfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferViewController.m; sourceTree = "<group>"; };
 		B05EF7851ACBA4FB0040C352 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B05EF7871ACBA52F0040C352 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B05EF7891ACBA5380040C352 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -283,6 +292,12 @@
 				B0D3B1901A9D4517008571C0 /* ProductosViewController.m */,
 				B0D1A63F1A9ED1380082F489 /* UserSettingsViewController.h */,
 				B0D1A6401A9ED1380082F489 /* UserSettingsViewController.m */,
+				B03D1FC61B01B9A000C72077 /* SucursalesViewController.h */,
+				B03D1FC71B01B9A000C72077 /* SucursalesViewController.m */,
+				B03D1FC91B01BE6E00C72077 /* TiendaViewController.h */,
+				B03D1FCA1B01BE6E00C72077 /* TiendaViewController.m */,
+				B03D1FCC1B01BF2600C72077 /* OfferViewController.h */,
+				B03D1FCD1B01BF2600C72077 /* OfferViewController.m */,
 				B06659591A5AFE7300F00BF8 /* ViewController.h */,
 				B066595A1A5AFE7300F00BF8 /* ViewController.m */,
 				B072724A1A5BB1C70094E809 /* TiendaCell.h */,
@@ -547,13 +562,16 @@
 				B06659581A5AFE7300F00BF8 /* AppDelegate.m in Sources */,
 				B0D1A6411A9ED1380082F489 /* UserSettingsViewController.m in Sources */,
 				B07272101A5B1EFC0094E809 /* LogInViewController.m in Sources */,
+				B03D1FCE1B01BF2600C72077 /* OfferViewController.m in Sources */,
 				B072724D1A5BB1C70094E809 /* TiendaCell.m in Sources */,
 				B072720D1A5B1EE80094E809 /* LandingViewController.m in Sources */,
 				B0D3B1911A9D4517008571C0 /* ProductosViewController.m in Sources */,
 				B07272491A5BAB850094E809 /* TiendasViewController.m in Sources */,
 				B072722E1A5B8E4E0094E809 /* SWRevealViewController.m in Sources */,
+				B03D1FCB1B01BE6E00C72077 /* TiendaViewController.m in Sources */,
 				B07272231A5B80470094E809 /* PageContentViewController.m in Sources */,
 				B072723A1A5BA09C0094E809 /* MenuViewController.m in Sources */,
+				B03D1FC81B01B9A000C72077 /* SucursalesViewController.m in Sources */,
 				B0D3B18E1A9D4480008571C0 /* DetalleProductoCollectionViewCell.m in Sources */,
 				B07272131A5B1F1E0094E809 /* SignInViewController.m in Sources */,
 				B07272311A5B8F1E0094E809 /* CustomTabBarController.m in Sources */,

@@ -7,6 +7,8 @@
 //
 
 #import "TiendasViewController.h"
+#import "SucursalesViewController.h"
+#import "MBProgressHUD.h"
 #import "TiendaCell.h"
 #import <Parse/Parse.h>
 
@@ -16,11 +18,18 @@
 
 @implementation TiendasViewController{
     NSArray *tiendas;
+    NSMutableArray *fotos;
+    NSMutableArray *logos;
+    NSInteger selecIndex;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [hud setDetailsLabelText:@"Cargando tiendas"];
     //tiendas=@[@"ZARA",@"GMO", @"AEROPOSTAL", @"NORTH FACE"];
+    fotos = [[NSMutableArray alloc] init];
+    logos=[[NSMutableArray alloc] init];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     PFQuery *query = [PFQuery queryWithClassName:@"Tienda"];
@@ -30,10 +39,14 @@
             NSLog(@"Successfully retrieved %d scores.", objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
-                NSLog(@"%@", object.objectId);
+                 NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[object objectForKey:@"foto"]]];
+                [fotos addObject:data];
+                 NSData *data2 = [NSData dataWithContentsOfURL:[NSURL URLWithString:[object objectForKey:@"logo"]]];
+                [logos addObject:data2];
             }
             tiendas=objects;
             [self.tableView reloadData];
+            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -77,25 +90,36 @@
         cell = [[TiendaCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tiendaCell"];
     }
     NSDictionary *actual = tiendas[indexPath.row];
-    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[actual objectForKey:@"foto"]]];
-    [cell.backImage setImage:[UIImage imageWithData:data]];
-    NSData *data2 = [NSData dataWithContentsOfURL:[NSURL URLWithString:[actual objectForKey:@"logo"]]];
-    [cell.logo setImage:[UIImage imageWithData:data2]];
+    [cell.backImage setImage:[UIImage imageWithData:fotos[indexPath.row]]];
+    [cell.logo setImage:[UIImage imageWithData:logos[indexPath.row]]];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    selecIndex=indexPath.row;
+    [self performSegueWithIdentifier:@"sucShow" sender:self];
    
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    SucursalesViewController *nextVC = (SucursalesViewController *)[segue destinationViewController];
+    PFObject *actual = tiendas[selecIndex];
+   
+    PFRelation *relation = [actual relationForKey:@"sucursales"];
+    
+    // generate a query based on that relation
+    PFQuery *query = [relation query];
+    NSArray* sucursales = [query findObjects];
+    nextVC.sucursales = [[NSMutableArray alloc] initWithArray:sucursales];
+     NSLog(sucursales.description);
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

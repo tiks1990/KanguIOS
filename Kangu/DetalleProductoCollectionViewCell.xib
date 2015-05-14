@@ -12,7 +12,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="284" height="318"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-Sp-qba">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GMOdescuento" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-Sp-qba">
                         <rect key="frame" x="0.0" y="0.0" width="284" height="264"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49U-pg-lLt">
@@ -94,6 +94,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="GMOdescuento" width="558" height="429"/>
         <image name="estrella.png" width="512" height="512"/>
     </resources>
 </document>
