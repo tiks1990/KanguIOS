@@ -33,7 +33,9 @@ NSString *const BFTaskMultipleExceptionsException = @"BFMultipleExceptionsExcept
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    /*
     _movintracks=[[MTMovintracks alloc] initWithRootServer:@"app.movintracks.io" ApiKey:@"a2dadf42d8639dcac667933d50429853" andApiSecret:@"92fe3484471ceab9596184c1055e0572c3a590d8" withLaunchingOptions:launchOptions];
+     */
     
     // Check if we are using ios8
     if ([application respondsToSelector:@selector(registerForRemoteNotifications)]){
@@ -66,26 +68,26 @@ NSString *const BFTaskMultipleExceptionsException = @"BFMultipleExceptionsExcept
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     [FBSDKAppEvents activateApp];
     [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
-    [_movintracks applicationDidBecomeActive];
+    //[_movintracks applicationDidBecomeActive];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
-    [_movintracks applicationDidReceiveLocalNotification:notification];
+    //[_movintracks applicationDidReceiveLocalNotification:notification];
 }
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
-    [_movintracks setPushToken:deviceToken];
-    NSLog(@"My token is: %@", deviceToken);
+   // [_movintracks setPushToken:deviceToken];
+   // NSLog(@"My token is: %@", deviceToken);
 }
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
-    BOOL r = [_movintracks applicationDidReceiveRemoteNotification: userInfo];
+   // BOOL r = [_movintracks applicationDidReceiveRemoteNotification: userInfo];
 
 }
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
-    [_movintracks setPushToken:nil];
+    //[_movintracks setPushToken:nil];
 }
 
 - (BOOL)application:(UIApplication *)application

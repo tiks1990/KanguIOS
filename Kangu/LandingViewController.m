@@ -10,7 +10,7 @@
 #import "TutorialViewController.h"
 #import "LogInViewController.h"
 #import "SignInViewController.h"
-#import "MTMovintracks.h"
+//#import "MTMovintracks.h"
 @interface LandingViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *logIn;
 @property (weak, nonatomic) IBOutlet UIButton *signUp;
@@ -25,7 +25,7 @@
     [super viewDidLoad];
     [[self.tour layer] setBorderWidth:1.0f];
     [[self.tour layer] setBorderColor:[UIColor whiteColor].CGColor];
-    [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(beaconsListened:) name:kNumberBeaconsNotification object:nil];
+   // [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(beaconsListened:) name:kNumberBeaconsNotification object:nil];
     // Do any additional setup after loading the view.
 }
 

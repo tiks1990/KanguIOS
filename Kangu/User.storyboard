@@ -1075,7 +1075,7 @@
                                         <constraint firstAttribute="trailing" secondItem="Apk-6Z-5g1" secondAttribute="trailing" id="Zfb-D2-RZb"/>
                                     </constraints>
                                 </view>
-                                <color key="tintColor" patternImage="E8BA4D9A-3E7B-4D52-9944-9F325475E25E" colorSpace="pattern"/>
+                                <color key="tintColor" patternImage="6070E597-C4BA-4FB7-AAEF-66621FCDAEE3" colorSpace="pattern"/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <visualEffectView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQH-rC-gY2">
@@ -1099,7 +1099,7 @@
                                         <constraint firstAttribute="trailing" secondItem="hun-d9-fe2" secondAttribute="trailing" id="gge-wp-Svo"/>
                                     </constraints>
                                 </view>
-                                <color key="tintColor" patternImage="9D03C57C-A313-41C6-9FEE-A4FE67925EEA" colorSpace="pattern"/>
+                                <color key="tintColor" patternImage="3C05192C-9756-4D20-A8D9-67D88D504427" colorSpace="pattern"/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalle del descuento como terminos y condiciones o restricciones de este. aqui puede darse mas infomracion" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmL-Ae-sCx">
@@ -1203,7 +1203,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="9D03C57C-A313-41C6-9FEE-A4FE67925EEA" width="256" height="256">
+        <image name="3C05192C-9756-4D20-A8D9-67D88D504427" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -5645,7 +5645,7 @@ BA6JAAQOkQAEDp4ABA6jAAQOpQAEDqcABA6sAAQOtAAEDrcABA68AAQOxAAEDscABA7ZAAQO3AAEDuEA
 AAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQO4w
 </mutableData>
         </image>
-        <image name="E8BA4D9A-3E7B-4D52-9944-9F325475E25E" width="256" height="256">
+        <image name="6070E597-C4BA-4FB7-AAEF-66621FCDAEE3" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

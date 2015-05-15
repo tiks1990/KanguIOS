@@ -8,7 +8,7 @@
 
 #import "TiendasViewController.h"
 #import "SucursalesViewController.h"
-#import "MBProgressHUD.h"
+//#import "MBProgressHUD.h"
 #import "TiendaCell.h"
 #import <Parse/Parse.h>
 
@@ -25,8 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [hud setDetailsLabelText:@"Cargando tiendas"];
+    //MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //[hud setDetailsLabelText:@"Cargando tiendas"];
     //tiendas=@[@"ZARA",@"GMO", @"AEROPOSTAL", @"NORTH FACE"];
     fotos = [[NSMutableArray alloc] init];
     logos=[[NSMutableArray alloc] init];
@@ -46,7 +46,7 @@
             }
             tiendas=objects;
             [self.tableView reloadData];
-            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+            //[MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);

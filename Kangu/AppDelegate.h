@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MTMovintracks.h"
+//#import "MTMovintracks.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property(nonatomic, retain) MTMovintracks *movintracks;
+//@property(nonatomic, retain) MTMovintracks *movintracks;
 
 @end
 

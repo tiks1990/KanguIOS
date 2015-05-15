@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-#import "MTMovintracks.h"
+//#import "MTMovintracks.h"
 
 @interface MenuViewController ()
 
@@ -24,7 +24,7 @@
     self.tableView.dataSource=self;
     
     menu=@[@"GEO-LOC PROFILE",@"PERFIL COMPRAS", @"MI CUENTA" , @"PRIVACIDAD", @"TERMINOS DE USO",@"SOBRE NOSOTROS",@"HOME"];
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openModalView:) name:kShowModalViewNotification object:nil];
+    // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openModalView:) name:kShowModalViewNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
